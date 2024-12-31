@@ -25,7 +25,7 @@ endgroup() {
 ###############################
 
 # openwrt repo
-OPENWRT_REPO=WoChen5770/openwrt-lite
+OPENWRT_REPO=pmkol/openwrt-lite
 
 # github proxy
 [ "$CN_PROXY" = "y" ] && github_proxy="ghproxy.cc/https://" || github_proxy=""
@@ -161,10 +161,6 @@ git clone https://$github/pmkol/openwrt-feeds master/extd-23.05 -b extd-23.05 --
 git clone https://$github/pmkol/openwrt-feeds master/lite-23.05 -b lite-23.05 --depth=1
 [ "$(whoami)" = "runner" ] && endgroup
 
-cd master
-# 打印当前工作目录
-current_directory=$(pwd)
-echo "Current directory: $current_directory"
 # openwrt lite
 if [ -d openwrt ]; then
     cd openwrt
