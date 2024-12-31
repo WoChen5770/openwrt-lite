@@ -161,6 +161,7 @@ git clone https://$github/pmkol/openwrt-feeds master/extd-23.05 -b extd-23.05 --
 git clone https://$github/pmkol/openwrt-feeds master/lite-23.05 -b lite-23.05 --depth=1
 [ "$(whoami)" = "runner" ] && endgroup
 
+cd master
 # openwrt lite
 if [ -d openwrt ]; then
     cd openwrt
