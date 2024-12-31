@@ -11,5 +11,3 @@ git clone https://$github/sbwml/openwrt-alist package/new/alist
 rm -rf feeds/packages/utils/lrzsz
 git clone https://$github/sbwml/packages_utils_lrzsz package/new/lrzsz
 
-# luci-theme-design - add new package
-git clone https://$github/SAENE/luci-theme-design package/new/luci-theme-design
