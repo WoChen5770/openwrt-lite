@@ -162,6 +162,9 @@ git clone https://$github/pmkol/openwrt-feeds master/lite-23.05 -b lite-23.05 --
 [ "$(whoami)" = "runner" ] && endgroup
 
 cd master
+# 打印当前工作目录
+current_directory=$(pwd)
+echo "Current directory: $current_directory"
 # openwrt lite
 if [ -d openwrt ]; then
     cd openwrt
