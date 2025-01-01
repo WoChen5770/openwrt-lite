@@ -11,3 +11,5 @@ git clone https://$github/sbwml/openwrt-alist package/new/alist
 rm -rf feeds/packages/utils/lrzsz
 git clone https://$github/sbwml/packages_utils_lrzsz package/new/lrzsz
 
+# luci-app-homebox - add new package
+git clone https://github.com/selfcan/luci-app-homebox package/new/luci-app-homebox
