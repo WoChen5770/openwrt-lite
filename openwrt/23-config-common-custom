@@ -68,7 +68,7 @@ CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-daed=y
 
 ### Homeproxy
-CONFIG_PACKAGE_luci-app-homeproxy is not set
+# CONFIG_PACKAGE_luci-app-homeproxy is not set
 
 ### L2TP
 # CONFIG_PACKAGE_kmod-l2tp is not set
