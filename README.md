@@ -5,7 +5,7 @@
 
 仅需安装、配置一次，后续升级无需重新刷写、配置固件
 
-欢迎加入交流群：[OpenWrt-mihomo](https://t.me/+xqUr1lp9FD0xZDM1)
+欢迎加入交流群：[Infinity Nikki](https://t.me/+xqUr1lp9FD0xZDM1)
 
 #### 固件下载：
 https://github.com/pmkol/openwrt-lite/releases
@@ -161,7 +161,7 @@ Toolchain Description: Clang19(LLVM-LTO) GCC14(MOLD+LTO)
 
 #### 二、配置插件
 
-- 修改 `openwrt/23-config-common-custom` 配置，注释或删除掉不需要的插件
+- 修改 `openwrt/23-config-common-custom` 配置，注释或删除掉不需要的插件，该配置会自动覆盖lite与server配置中的luci插件
 
 - 按照 .config 格式添加需要的插件，例如 `CONFIG_PACKAGE_luci-app-mihomo=y`
 

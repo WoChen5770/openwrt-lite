@@ -216,6 +216,10 @@ mv ../master/base-23.05/ngtcp2 package/libs/ngtcp2
 rm -rf feeds/packages/net/curl
 mv ../master/base-23.05/curl feeds/packages/net/curl
 
+# libpcap
+rm -rf package/libs/libpcap
+mv ../master/base-23.05/libpcap package/libs/libpcap
+
 # docker
 [ "$DEV_BUILD" = "y" ] && docker_branch=main || docker_branch=openwrt-23.05
 rm -rf feeds/{luci/applications/luci-app-dockerman,packages/utils/docker-compose}
@@ -268,6 +272,7 @@ pushd feeds/luci
     [ "$MINIMAL_BUILD" != "y" ] && curl -s https://$mirror/openwrt/patch/luci/0006-luci-mod-system-mounts-add-docker-directory-mount-po.patch | patch -p1
     curl -s https://$mirror/openwrt/patch/luci/0007-luci-base-correct-textarea-wrap.patch | patch -p1
     curl -s https://$mirror/openwrt/patch/luci/0008-luci-base-cbifileupload-support-file-browser-mode.patch | patch -p1
+    curl -s https://$github/openwrt/luci/commit/089903105f4f01135008b8a22557ae998b9303e9.patch | patch -p1
 popd
 
 # Luci diagnostics.js
