@@ -65,7 +65,7 @@ CONFIG_PACKAGE_luci-app-upnp=y
 
 ### Dae
 # CONFIG_PACKAGE_luci-app-dae=y
-# CONFIG_PACKAGE_luci-app-daed=y
+CONFIG_PACKAGE_luci-app-daed=y
 
 ### Homeproxy
 # CONFIG_PACKAGE_luci-app-homeproxy is not set
